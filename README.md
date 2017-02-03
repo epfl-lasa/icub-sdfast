@@ -25,7 +25,9 @@ The Model class(model.cpp and model.hpp) interfaces with the SDFAST library to u
 Before using this interface, following steps should be done:
 
 1 - The number of states (AIR_N_Q) and number of state derivatives (AIR_N_U), also the number of bodies and joints should be defined in icub-sdfast/sdfast/include/Description.hpp
+
 2-  Description of state vector and its derivative, as well as body and joint indices can be defined in Description.hpp. This step is optional.
+
 3-  Minimum and maximum feasible joint angles should be specified in Model.cpp (Model::init).
 
 
