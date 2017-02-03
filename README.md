@@ -5,6 +5,7 @@ Here, an interface is provided to extract required information (like mass matrix
 Note:
 sdfast_model.sd is the description file which is used as the input for SDFAST to generate the symbolic dynamic.
 sdfast_model_d.c, sdfast_model_s.c, sdfast_model_i are the outputs of SDFAST which are needed here to compute mass matrix, gravitational and .. forces.
+
 The folder named "codes" includes a library that provides an interface with SDFAST outputs. 
 "pre-computation" doesn't have any function here. it includes some matlab codes and an excel file which are used for preparing the "sdfast_model.sd".
 
