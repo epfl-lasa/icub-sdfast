@@ -8,7 +8,7 @@ sdfast_model.sd is the description file which is used as the input for SDFAST to
 sdfast_model_d.c, sdfast_model_s.c, sdfast_model_i are the outputs of SDFAST which are needed here to compute mass matrix, gravitational and .. forces.
 
 The folder named "codes" includes a library that provides an interface with SDFAST outputs. 
-"pre-computation" doesn't have any function here. it includes some matlab codes and an excel file which are used for preparing the "sdfast_model.sd".
+"iCub_tree.ods" doesn't have any function here. it is used for preparing the "sdfast_model.sd".
 
 # Test the functionality
 navigate to icub-sdfast folder, then:

@@ -1,5 +1,5 @@
 /*
-Generated 01-Oct-2009 10:25:02 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 09:15:27 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -797,8 +797,8 @@ void sdfast_model_qrslv(int nr,
 {
 
     sdfast_model_qrdcomp(nr,nc,nra,nca,mapr,mapc,w,qraux,jpvt);
-    sdfast_model_qrbslv(nr,nc,nra,nca,mapr,mapc,tol,work,iwork,w,qraux,jpvt,b,x,rank)
-      ;
+    sdfast_model_qrbslv(nr,nc,nra,nca,mapr,mapc,tol,work,iwork,w,qraux,
+      jpvt,b,x,rank);
 }
 
 /*
@@ -873,8 +873,8 @@ void sdfast_model_lsslv(int nr,
             }
             iw[map+i] = i;
         }
-        sdfast_model_qrslv(nra,nra,nra,nra,&iw[map],&iw[map],tol,&iw[jpvt],&rw[qraux]
-          ,&rw[work],&iw[iwork],&dw[wwt],&rw[rhs],&rw[soln],&rank);
+        sdfast_model_qrslv(nra,nra,nra,nra,&iw[map],&iw[map],tol,&iw[jpvt],&rw[
+          qraux],&rw[work],&iw[iwork],&dw[wwt],&rw[rhs],&rw[soln],&rank);
         for (i = 0; i <= nca-1; i++) {
             mapi = mapc[i];
             x[mapi] = 0.;
@@ -925,8 +925,8 @@ void sdfast_model_lsslv(int nr,
                 dw[ddt+j*dsiz+i] = dw[ix];
             }
         }
-        sdfast_model_qrslv(dsiz,dsiz,dsiz,dsiz,&iw[map],&iw[map],tol,&iw[jpvt],&rw[
-          qraux],&rw[work],&iw[iwork],&dw[ddt],&rw[rhs],&rw[soln],&rank);
+        sdfast_model_qrslv(dsiz,dsiz,dsiz,dsiz,&iw[map],&iw[map],tol,&iw[jpvt],&
+          rw[qraux],&rw[work],&iw[iwork],&dw[ddt],&rw[rhs],&rw[soln],&rank);
         for (i = 0; i <= nca-1; i++) {
             mapi = mapc[i];
             x[mapi] = 0.;
@@ -1217,18 +1217,18 @@ void sdfast_model_root(int (*func)(),
             if (*fcnt >= maxeval) {
                 goto givingUp;
             }
-            sdfast_model_calcjac(func,vars,param,nfunc,nvar,lock,crude,fret,&rw[f1]
-              ,jw,fcnt,&rw[scale]);
+            sdfast_model_calcjac(func,vars,param,nfunc,nvar,lock,crude,fret,&rw[
+              f1],jw,fcnt,&rw[scale]);
             for (i = 0; i < nfunc; i++) {
                 rw[f1+i] = fret[i]*rw[scale+i];
             }
             sdfast_model_lsslv(nfunc,nvar,nfunc,nvar,ndes,&iw[mapf],&iw[mapv]
               ,qrtol,dw,&rw[morerw],&iw[moreiw],jw,&rw[f1],&rw[deltav]);
             for (;;) {
-                sdfast_model_adjvars(func,vars,param,nfunc,ndes,dnorm,nvar,&rw[deltav
-                  ],step,pmaxrerr,pderrnorm,rtol,fcnt,&rw[guess],&rw[f1]);
-                sdfast_model_calcerrs(&rw[f1],nfunc,ndes,dnorm,&maxderr,&maxrerr,&
-                  derrnorm);
+                sdfast_model_adjvars(func,vars,param,nfunc,ndes,dnorm,nvar,&rw[
+                  deltav],step,pmaxrerr,pderrnorm,rtol,fcnt,&rw[guess],&rw[f1]);
+                sdfast_model_calcerrs(&rw[f1],nfunc,ndes,dnorm,&maxderr,&
+                  maxrerr,&derrnorm);
                 if ((pderrnorm > derrnorm) && (pmaxrerr <= rtol) && (maxrerr > 
                   rtol) && (maxrerr <= .05)) {
                     for (i = 0; i < nvar; i++) {
@@ -1243,16 +1243,16 @@ void sdfast_model_root(int (*func)(),
                         for (i = 0; i < nreq; i++) {
                             rw[f2+i] = rw[f1+i]*rw[scale+i];
                         }
-                        sdfast_model_lsslv(nreq,nvar,nreq,nvar,0,&iw[mapf],&iw[mapv]
-                          ,qrtol,dw,&rw[morerw],&iw[moreiw],jw,&rw[f2],&rw[
+                        sdfast_model_lsslv(nreq,nvar,nreq,nvar,0,&iw[mapf],&iw[
+                          mapv],qrtol,dw,&rw[morerw],&iw[moreiw],jw,&rw[f2],&rw[
                           rdeltav]);
                         for (;;) {
                             sdfast_model_adjvars(func,&rw[rvars]
                               ,param,nfunc,ndes,dnorm,nvar,&rw[rdeltav]
                               ,rstep,preverr,pderrnorm,rtol,fcnt,&rw[rguess],&rw
                               [f2]);
-                            sdfast_model_calcerrs(&rw[f2],nfunc,ndes,dnorm,&maxderr,&
-                              maxrerr,&derrnorm);
+                            sdfast_model_calcerrs(&rw[f2],nfunc,ndes,dnorm,&
+                              maxderr,&maxrerr,&derrnorm);
                             if (preverr-maxrerr >= rtol) {
                                 break;
                             } else {
@@ -1433,8 +1433,8 @@ void sdfast_model_finteg(int (*func)(),
     morework = errs+neq;
     ttime = *time;
     if (step > 0.) {
-        sdfast_model_rk4m(func,ttime,st,dst,param,step,&work[nst],neq,&work[morework]
-          ,&work[errs],errest,&which);
+        sdfast_model_rk4m(func,ttime,st,dst,param,step,&work[nst],neq,&work[
+          morework],&work[errs],errest,&which);
         for (i = 0; i < neq; i++) {
             st[i] = work[nst+i];
         }
@@ -1542,8 +1542,8 @@ void sdfast_model_vinteg(int (*func)(),
                     stp = nstp;
                     break;
                 }
-                sdfast_model_rk4m(func,xtime,&work[xst],&work[xdst],param,stp2,&work[
-                  xst2],neq,&work[morework],&work[errs],&maxerr,&wh2);
+                sdfast_model_rk4m(func,xtime,&work[xst],&work[xdst],param,stp2,&
+                  work[xst2],neq,&work[morework],&work[errs],&maxerr,&wh2);
                 if (work[errs+wh] <= tol) {
                     func(xtime,&work[xst],&work[xdst],param,&errf);
                     stp = nstp;

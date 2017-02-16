@@ -73,35 +73,38 @@ void Model::init()
 	sdfast_model_init();
 	qmin = Cvector(AIR_N_U);
 	qmax = Cvector(AIR_N_U);
+
 	qmax << inf, inf, inf, inf, inf, inf,
 
-			84, 39, 59,                    // torso pitch, roll, yaw
-			5, 160, 100,					// left shoulder pitch ,roll, yaw
-			106, 							//left elbow
-			50, 10, 25 ,             		//left wrist prosup, pitch, yaw
-			132, 119, 79, 					//left hip pitch, roll, yaw
-			23, 21,	24,						//left knee, ankle pitch, ankle roll
-			5, 160, 100,					// right shoulder pitch ,roll, yaw
-			106, 							//right elbow
-			50, 10, 25,						//right wrist prosup, pitch, yaw
-	  132, 119, 79, 					//right hip pitch, roll, yaw
-	   23, 21, 2,						//right knee, ankle pitch, ankle roll
-		-30, 20, 44;						//neck pitch, roll, yaw
+			1.46608, 0.680678, 1.02974,                    // torso pitch, roll, yaw
+			0.0872665, 2.80649, 1.74533,					// left shoulder pitch ,roll, yaw
+			1.85005, 							//left elbow
+			0.872665, 0.174533, 0.436332 ,             		//left wrist prosup, pitch, yaw
+			2.30383, 2.07694, 1.37881, 					//left hip pitch, roll, yaw
+			0.401426, 0.366519,	0.418879,						//left knee, ankle pitch, ankle roll
+			0.0872665, 2.80649, 1.74533,					// right shoulder pitch ,roll, yaw
+			1.85005, 							//right elbow
+			0.872665, 0.174533, 0.436332,						//right wrist prosup, pitch, yaw
+			2.30383, 2.07694, 1.37881, 					//right hip pitch, roll, yaw
+			0.401426, 0.366519, 0.418879,						//right knee, ankle pitch, ankle roll
+			0.383972, 0.349066, 0.767945;						//neck pitch, roll, yaw
 
 
 	qmin << -inf, -inf, -inf, -inf, -inf, -inf,
-			-22, -39, -59,                  // torso pitch, roll, yaw
-			-95,  0, -37, 		     		//left shoulder pitch ,roll, yaw
-			5.5, 							//left elbow
-			-50, -65, -25, 					//left wrist prosup, pitch, yaw
-			-44, -17, -79,					//left hip pitch, roll, yaw
-			-125, -42, -24 ,				//left knee, ankle pitch, ankle roll
-			-95,  0, -37, 		     		//right shoulder pitch ,roll, yaw
-			5.5, 							//right elbow
-			-50, -65, -25, 					//right wrist prosup, pitch, yaw
-	    -44, -17, -79,					//right hip pitch, roll, yaw
-	    -125, -42, -24 ,				//right knee, ankle pitch, ankle roll
-			 22, -20, 44;						//neck pitch, roll, yaw
+			-0.383972, -0.680678, -1.02974,                  // torso pitch, roll, yaw
+			-1.65806,  0.00000, -0.645772, 		     		//left shoulder pitch ,roll, yaw
+			0.0959931, 							//left elbow
+			-0.872665, -1.13446, -0.436332, 					//left wrist prosup, pitch, yaw
+			-0.767945, -0.296706, -1.37881,					//left hip pitch, roll, yaw
+			-2.18166, -0.733038, -0.418879 ,				//left knee, ankle pitch, ankle roll
+			-1.65806,  0.00000, -0.645772, 		     		//right shoulder pitch ,roll, yaw
+			0.0959931, 							//right elbow
+			-0.872665, -1.13446, -0.436332, 					//right wrist prosup, pitch, yaw
+			-0.767945, -0.296706, -1.37881,					//right hip pitch, roll, yaw
+			-2.18166, -0.733038, -0.418879,				//right knee, ankle pitch, ankle roll
+			-0.523599, -0.349066, -0.767945;						//neck pitch, roll, yaw
+
+
 }
 
 void Model::set_state(double tt, Cvector& in_state, Cvector& in_stated)

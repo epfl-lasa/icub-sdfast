@@ -1,5 +1,5 @@
 /*
-Generated 03-Feb-2017 09:20:13 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -115,7 +115,7 @@ void sdfast_model_assemble(double time,
     int iw[304],rooterr;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(50,42);
     }
     param[0] = time;
@@ -152,15 +152,16 @@ void sdfast_model_initvel(double time,
     int iw[304],rooterr;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(51,42);
     }
     for (i = 0; i < 39; i++) {
         param[i] = state[i];
     }
     param[39] = time;
-    sdfast_model_root(sdfast_model_velfunc,&state[39],param,38,38,0,lock,tol,tol,maxevals,
-      jw,dw,rw,iw,verrs,fcnt,&rooterr);
+    sdfast_model_root(sdfast_model_velfunc,&
+      state[39],param,38,38,0,lock,tol,tol,maxevals,jw,dw,rw,iw,verrs,fcnt,&
+      rooterr);
     sdfast_model_velfunc(&state[39],param,verrs);
     *fcnt = *fcnt+1;
     if (rooterr == 0) {
@@ -189,7 +190,7 @@ void sdfast_model_static(double time,
     int iw[456],rooterr,i;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(52,42);
     }
     for (i = 0; i < 38; i++) {
@@ -229,7 +230,7 @@ void sdfast_model_steady(double time,
     int iw[760],rooterr,i;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(53,42);
     }
     param[0] = time;
@@ -272,7 +273,7 @@ void sdfast_model_motion(double *time,
     int vintgerr,which,ferr,i;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(54,42);
     }
     param[0] = ctol;
@@ -285,8 +286,8 @@ void sdfast_model_motion(double *time,
     if (step <= 0.) {
         step = dt;
     }
-    sdfast_model_vinteg(sdfast_model_motfunc,&ttime,state,dstate,param,dt,&step,77,tol,work,&
-      vintgerr,&which);
+    sdfast_model_vinteg(sdfast_model_motfunc,&ttime,state,dstate,param,dt,&
+      step,77,tol,work,&vintgerr,&which);
     *time = ttime;
     *err = vintgerr;
 }
@@ -306,7 +307,7 @@ void sdfast_model_fmotion(double *time,
     int ferr,i;
 
     sdfast_model_gentime(&i);
-    if (i != 92012) {
+    if (i != 190837) {
         sdfast_model_seterr(55,42);
     }
     param[0] = ctol;
@@ -316,7 +317,8 @@ void sdfast_model_fmotion(double *time,
         sdfast_model_motfunc(ttime,state,dstate,param,&ferr);
         *flag = 0;
     }
-    sdfast_model_finteg(sdfast_model_motfunc,&ttime,state,dstate,param,dt,77,work,errest,&ferr);
+    sdfast_model_finteg(sdfast_model_motfunc,&ttime,state,dstate,param,dt,77,
+      work,errest,&ferr);
     if (ferr != 0) {
         *err = 1;
     }

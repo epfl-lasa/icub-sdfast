@@ -1,5 +1,5 @@
 /*
-Generated 03-Feb-2017 09:20:12 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -1273,7 +1273,7 @@ sdfast_model_ginput_t sdfast_model_ginput = {
     /* pin[15][1] */ 0.,
     /* pin[15][2] */ 1.,
     /* pin[16][0] */ 0.,
-    /* pin[16][1] */ 0.,
+    /* pin[16][1] */ 1.,
     /* pin[16][2] */ 0.,
     /* pin[17][0] */ 1.,
     /* pin[17][1] */ 0.,
@@ -1343,236 +1343,236 @@ sdfast_model_ginput_t sdfast_model_ginput = {
     /* rk[0][0] */ 0.,
     /* rk[0][1] */ 0.,
     /* rk[0][2] */ 0.,
-    /* rk[1][0] */ .032,
+    /* rk[1][0] */ 0.,
     /* rk[1][1] */ 0.,
     /* rk[1][2] */ 0.,
     /* rk[2][0] */ 0.,
     /* rk[2][1] */ 0.,
     /* rk[2][2] */ 0.,
-    /* rk[3][0] */ -.002229,
-    /* rk[3][1] */ -.075,
-    /* rk[3][2] */ 0.,
-    /* rk[4][0] */ 5e-6,
-    /* rk[4][1] */ -.0187,
-    /* rk[4][2] */ .001191,
-    /* rk[5][0] */ -9.3e-5,
-    /* rk[5][1] */ .004441,
-    /* rk[5][2] */ -.0166,
-    /* rk[6][0] */ -.005589,
-    /* rk[6][1] */ -.003913,
-    /* rk[6][2] */ -.050132,
-    /* rk[7][0] */ .000157,
-    /* rk[7][1] */ -.002188,
-    /* rk[7][2] */ -.0298,
-    /* rk[8][0] */ .0013,
-    /* rk[8][1] */ .000504,
-    /* rk[8][2] */ .00105,
-    /* rk[9][0] */ -.000347,
-    /* rk[9][1] */ -.065192,
-    /* rk[9][2] */ -.004761,
+    /* rk[3][0] */ -.002228,
+    /* rk[3][1] */ 4e-6,
+    /* rk[3][2] */ -.075,
+    /* rk[4][0] */ .005864,
+    /* rk[4][1] */ .017787,
+    /* rk[4][2] */ .000596,
+    /* rk[5][0] */ -.003803,
+    /* rk[5][1] */ -.007601,
+    /* rk[5][2] */ .015577,
+    /* rk[6][0] */ -.031885,
+    /* rk[6][1] */ -.018417,
+    /* rk[6][2] */ .034476,
+    /* rk[7][0] */ -.016113,
+    /* rk[7][1] */ -.011041,
+    /* rk[7][2] */ .022507,
+    /* rk[8][0] */ .000395,
+    /* rk[8][1] */ .00341,
+    /* rk[8][2] */ .002184,
+    /* rk[9][0] */ -.062125,
+    /* rk[9][1] */ -.019376,
+    /* rk[9][2] */ .011991,
     /* rk[10][0] */ 0.,
     /* rk[10][1] */ 0.,
     /* rk[10][2] */ 0.,
-    /* rk[11][0] */ -.011682,
-    /* rk[11][1] */ .050048,
-    /* rk[11][2] */ .000577,
-    /* rk[12][0] */ 0.,
+    /* rk[11][0] */ -.043457,
+    /* rk[11][1] */ -.007082,
+    /* rk[11][2] */ .028905,
+    /* rk[12][0] */ .000125,
     /* rk[12][1] */ .0782,
     /* rk[12][2] */ 0.,
     /* rk[13][0] */ -1e-6,
     /* rk[13][1] */ 0.,
-    /* rk[13][2] */ -.03045,
+    /* rk[13][2] */ .03045,
     /* rk[14][0] */ 0.,
     /* rk[14][1] */ 0.,
     /* rk[14][2] */ 0.,
     /* rk[15][0] */ -.00144,
-    /* rk[15][1] */ .15943,
-    /* rk[15][2] */ .00039,
-    /* rk[16][0] */ .1071,
-    /* rk[16][1] */ -.004314,
-    /* rk[16][2] */ -.00211,
-    /* rk[17][0] */ .037002,
-    /* rk[17][1] */ .000239,
-    /* rk[17][2] */ -.149287,
+    /* rk[15][1] */ -.000387,
+    /* rk[15][2] */ .15943,
+    /* rk[16][0] */ -.001825,
+    /* rk[16][1] */ -.002106,
+    /* rk[16][2] */ .1071,
+    /* rk[17][0] */ -.017198,
+    /* rk[17][1] */ .001658,
+    /* rk[17][2] */ .0054,
     /* rk[18][0] */ -1e-6,
     /* rk[18][1] */ 0.,
-    /* rk[18][2] */ -.037,
-    /* rk[19][0] */ -.024069,
-    /* rk[19][1] */ .000614,
-    /* rk[19][2] */ .028415,
-    /* rk[20][0] */ -5e-6,
-    /* rk[20][1] */ -.0187,
-    /* rk[20][2] */ -.00119,
-    /* rk[21][0] */ 9.4e-5,
-    /* rk[21][1] */ .004532,
-    /* rk[21][2] */ .016601,
-    /* rk[22][0] */ -.005539,
-    /* rk[22][1] */ -.003928,
-    /* rk[22][2] */ -.04939,
-    /* rk[23][0] */ .000159,
-    /* rk[23][1] */ -.002481,
-    /* rk[23][2] */ -.029883,
-    /* rk[24][0] */ -.0013,
-    /* rk[24][1] */ .003096,
-    /* rk[24][2] */ -.001049,
-    /* rk[25][0] */ .000346,
-    /* rk[25][1] */ .065509,
-    /* rk[25][2] */ .004761,
+    /* rk[18][2] */ .037,
+    /* rk[19][0] */ -.02407,
+    /* rk[19][1] */ -.000575,
+    /* rk[19][2] */ -.028415,
+    /* rk[20][0] */ .005811,
+    /* rk[20][1] */ -.017804,
+    /* rk[20][2] */ .000587,
+    /* rk[21][0] */ -.003783,
+    /* rk[21][1] */ .007444,
+    /* rk[21][2] */ .015658,
+    /* rk[22][0] */ -.031365,
+    /* rk[22][1] */ .018311,
+    /* rk[22][2] */ .033926,
+    /* rk[23][0] */ -.016125,
+    /* rk[23][1] */ .011108,
+    /* rk[23][2] */ .022575,
+    /* rk[24][0] */ .000383,
+    /* rk[24][1] */ -.003411,
+    /* rk[24][2] */ .002184,
+    /* rk[25][0] */ -.062064,
+    /* rk[25][1] */ .019573,
+    /* rk[25][2] */ .011991,
     /* rk[26][0] */ 0.,
     /* rk[26][1] */ 0.,
     /* rk[26][2] */ 0.,
-    /* rk[27][0] */ -.011682,
-    /* rk[27][1] */ .050869,
-    /* rk[27][2] */ -.000576,
-    /* rk[28][0] */ 0.,
-    /* rk[28][1] */ .0782,
+    /* rk[27][0] */ -.043737,
+    /* rk[27][1] */ .007326,
+    /* rk[27][2] */ .029004,
+    /* rk[28][0] */ -.000124,
+    /* rk[28][1] */ -.0782,
     /* rk[28][2] */ 0.,
     /* rk[29][0] */ 0.,
     /* rk[29][1] */ 0.,
-    /* rk[29][2] */ -.03045,
+    /* rk[29][2] */ .03045,
     /* rk[30][0] */ 0.,
     /* rk[30][1] */ 0.,
     /* rk[30][2] */ 0.,
     /* rk[31][0] */ -.00144,
-    /* rk[31][1] */ .15943,
-    /* rk[31][2] */ -.00039,
-    /* rk[32][0] */ .1071,
-    /* rk[32][1] */ .000718,
-    /* rk[32][2] */ .00211,
-    /* rk[33][0] */ .0054,
-    /* rk[33][1] */ -.000989,
-    /* rk[33][2] */ .017199,
-    /* rk[34][0] */ 1e-6,
+    /* rk[31][1] */ .000393,
+    /* rk[31][2] */ .15943,
+    /* rk[32][0] */ -.001818,
+    /* rk[32][1] */ .002113,
+    /* rk[32][2] */ .1071,
+    /* rk[33][0] */ -.017202,
+    /* rk[33][1] */ -.001603,
+    /* rk[33][2] */ .0054,
+    /* rk[34][0] */ 0.,
     /* rk[34][1] */ 0.,
-    /* rk[34][2] */ -.037,
-    /* rk[35][0] */ -.024068,
-    /* rk[35][1] */ -.000614,
-    /* rk[35][2] */ .028415,
+    /* rk[34][2] */ .037,
+    /* rk[35][0] */ -.024067,
+    /* rk[35][1] */ .000652,
+    /* rk[35][2] */ -.028415,
     /* rk[36][0] */ 0.,
     /* rk[36][1] */ 0.,
     /* rk[36][2] */ 0.,
     /* rk[37][0] */ 0.,
     /* rk[37][1] */ 0.,
     /* rk[37][2] */ 0.,
-    /* rk[38][0] */ 0.,
-    /* rk[38][1] */ 0.,
-    /* rk[38][2] */ 0.,
+    /* rk[38][0] */ .0185,
+    /* rk[38][1] */ -2.8e-5,
+    /* rk[38][2] */ -.1108,
 
 /* tree inbtojoint vectors */
     /* ri[0][0] */ 0.,
     /* ri[0][1] */ 0.,
     /* ri[0][2] */ 0.,
-    /* ri[1][0] */ .032,
+    /* ri[1][0] */ 0.,
     /* ri[1][1] */ 0.,
     /* ri[1][2] */ 0.,
     /* ri[2][0] */ 0.,
     /* ri[2][1] */ 0.,
-    /* ri[2][2] */ 0.,
-    /* ri[3][0] */ -.002229,
-    /* ri[3][1] */ -.075,
+    /* ri[2][2] */ .032,
+    /* ri[3][0] */ .0055,
+    /* ri[3][1] */ -9e-6,
     /* ri[3][2] */ 0.,
-    /* ri[4][0] */ .003022,
-    /* ri[4][1] */ .068299,
-    /* ri[4][2] */ -.110261,
-    /* ri[5][0] */ 5e-6,
-    /* ri[5][1] */ -.0187,
-    /* ri[5][2] */ .001191,
-    /* ri[6][0] */ -9.3e-5,
-    /* ri[6][1] */ .004441,
-    /* ri[6][2] */ -.0166,
-    /* ri[7][0] */ .00941,
-    /* ri[7][1] */ .001312,
-    /* ri[7][2] */ .017868,
-    /* ri[8][0] */ .000157,
-    /* ri[8][1] */ .004229,
-    /* ri[8][2] */ .05448,
-    /* ri[9][0] */ -.013699,
-    /* ri[9][1] */ .005119,
-    /* ri[9][2] */ .00105,
-    /* ri[10][0] */ -.000348,
-    /* ri[10][1] */ .070558,
-    /* ri[10][2] */ -.004759,
+    /* ri[4][0] */ .003197,
+    /* ri[4][1] */ .110256,
+    /* ri[4][2] */ .0683,
+    /* ri[5][0] */ .005864,
+    /* ri[5][1] */ .017787,
+    /* ri[5][2] */ .000596,
+    /* ri[6][0] */ -.003803,
+    /* ri[6][1] */ -.007601,
+    /* ri[6][2] */ .015577,
+    /* ri[7][0] */ .017314,
+    /* ri[7][1] */ .0068,
+    /* ri[7][2] */ -.007862,
+    /* ri[8][0] */ .029879,
+    /* ri[8][1] */ .01993,
+    /* ri[8][2] */ -.040965,
+    /* ri[9][0] */ -.002373,
+    /* ri[9][1] */ .007145,
+    /* ri[9][2] */ -.012077,
+    /* ri[10][0] */ .069107,
+    /* ri[10][1] */ .017795,
+    /* ri[10][2] */ -.003747,
     /* ri[11][0] */ 0.,
     /* ri[11][1] */ 0.,
     /* ri[11][2] */ 0.,
-    /* ri[12][0] */ .000216,
-    /* ri[12][1] */ -.0681,
+    /* ri[12][0] */ .000108,
+    /* ri[12][1] */ .0681,
     /* ri[12][2] */ -.1199,
-    /* ri[13][0] */ 0.,
+    /* ri[13][0] */ .000125,
     /* ri[13][1] */ .0782,
     /* ri[13][2] */ 0.,
     /* ri[14][0] */ -1e-6,
     /* ri[14][1] */ 0.,
-    /* ri[14][2] */ .03605,
+    /* ri[14][2] */ -.03605,
     /* ri[15][0] */ 0.,
     /* ri[15][1] */ 0.,
-    /* ri[15][2] */ -.0665,
+    /* ri[15][2] */ .0665,
     /* ri[16][0] */ -.00144,
-    /* ri[16][1] */ -.06417,
-    /* ri[16][2] */ .00039,
-    /* ri[17][0] */ -.1059,
-    /* ri[17][1] */ -.004318,
-    /* ri[17][2] */ -.00211,
-    /* ri[18][0] */ .005402,
-    /* ri[18][1] */ -.000291,
-    /* ri[18][2] */ -.14929,
+    /* ri[16][1] */ -.000388,
+    /* ri[16][2] */ -.06417,
+    /* ri[17][0] */ -.001823,
+    /* ri[17][1] */ -.002108,
+    /* ri[17][2] */ -.1059,
+    /* ri[18][0] */ -.017198,
+    /* ri[18][1] */ .001658,
+    /* ri[18][2] */ .0054,
     /* ri[19][0] */ -1e-6,
     /* ri[19][1] */ 0.,
     /* ri[19][2] */ 0.,
-    /* ri[20][0] */ .003021,
-    /* ri[20][1] */ .068301,
-    /* ri[20][2] */ .110259,
-    /* ri[21][0] */ -.004582,
-    /* ri[21][1] */ .015677,
-    /* ri[21][2] */ .009183,
-    /* ri[22][0] */ .013515,
-    /* ri[22][1] */ .004721,
-    /* ri[22][2] */ -.011121,
-    /* ri[23][0] */ .009228,
-    /* ri[23][1] */ .01159,
-    /* ri[23][2] */ .013428,
-    /* ri[24][0] */ -.000502,
-    /* ri[24][1] */ .033048,
-    /* ri[24][2] */ .039691,
-    /* ri[25][0] */ -.010148,
-    /* ri[25][1] */ .000746,
-    /* ri[25][2] */ -.002839,
-    /* ri[26][0] */ -.033635,
-    /* ri[26][1] */ .062301,
-    /* ri[26][2] */ -.013665,
+    /* ri[20][0] */ .002845,
+    /* ri[20][1] */ -.110264,
+    /* ri[20][2] */ .0683,
+    /* ri[21][0] */ .005811,
+    /* ri[21][1] */ -.017804,
+    /* ri[21][2] */ .000587,
+    /* ri[22][0] */ -.003783,
+    /* ri[22][1] */ .007444,
+    /* ri[22][2] */ .015658,
+    /* ri[23][0] */ .017754,
+    /* ri[23][1] */ -.007063,
+    /* ri[23][2] */ -.008412,
+    /* ri[24][0] */ .029768,
+    /* ri[24][1] */ -.020009,
+    /* ri[24][2] */ -.040897,
+    /* ri[25][0] */ -.002397,
+    /* ri[25][1] */ -.007137,
+    /* ri[25][2] */ -.012077,
+    /* ri[26][0] */ .06905,
+    /* ri[26][1] */ -.018016,
+    /* ri[26][2] */ -.003746,
     /* ri[27][0] */ 0.,
     /* ri[27][1] */ 0.,
     /* ri[27][2] */ 0.,
     /* ri[28][0] */ -.000108,
     /* ri[28][1] */ -.0681,
     /* ri[28][2] */ -.1199,
-    /* ri[29][0] */ 0.,
+    /* ri[29][0] */ -.000124,
     /* ri[29][1] */ -.0782,
-    /* ri[29][2] */ 1e-6,
+    /* ri[29][2] */ 0.,
     /* ri[30][0] */ 0.,
     /* ri[30][1] */ 0.,
-    /* ri[30][2] */ .03605,
+    /* ri[30][2] */ -.03605,
     /* ri[31][0] */ 0.,
     /* ri[31][1] */ 0.,
-    /* ri[31][2] */ -.0665,
-    /* ri[32][0] */ -.001439,
-    /* ri[32][1] */ -.06417,
-    /* ri[32][2] */ -.00039,
-    /* ri[33][0] */ -.1059,
-    /* ri[33][1] */ .000681,
-    /* ri[33][2] */ .00211,
-    /* ri[34][0] */ .0054,
-    /* ri[34][1] */ .000541,
-    /* ri[34][2] */ -.017199,
+    /* ri[31][2] */ .0665,
+    /* ri[32][0] */ -.001438,
+    /* ri[32][1] */ .000392,
+    /* ri[32][2] */ -.06417,
+    /* ri[33][0] */ -.001816,
+    /* ri[33][1] */ .002112,
+    /* ri[33][2] */ -.1059,
+    /* ri[34][0] */ -.017202,
+    /* ri[34][1] */ -.001603,
+    /* ri[34][2] */ .0054,
     /* ri[35][0] */ 1e-6,
     /* ri[35][1] */ 0.,
     /* ri[35][2] */ 0.,
-    /* ri[36][0] */ 0.,
-    /* ri[36][1] */ 0.,
-    /* ri[36][2] */ 0.,
+    /* ri[36][0] */ 8e-5,
+    /* ri[36][1] */ 1e-6,
+    /* ri[36][2] */ .1183,
     /* ri[37][0] */ 0.,
     /* ri[37][1] */ 0.,
-    /* ri[37][2] */ 0.,
+    /* ri[37][2] */ .0095,
     /* ri[38][0] */ 0.,
     /* ri[38][1] */ 0.,
     /* ri[38][2] */ 0.,
@@ -4207,7 +4207,7 @@ void sdfast_model_state(double timein,
 /*
 Compute kinematic information and store it in sdgstate.
 
-Generated 03-Feb-2017 09:20:12 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -8775,7 +8775,7 @@ Initialize prescribed motions
     uvel[37] = u[37];
     upos[37] = q[37];
 /*
- Used 0.08 seconds CPU time,
+ Used 0.05 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 4274 adds/subtracts/negates
                    5728 multiplies
@@ -8820,7 +8820,7 @@ Convert velocities to qdots.
     oqdot[5] = (.5*(((q[3]*uin[4])+(q[38]*uin[5]))-(q[4]*uin[3])));
     oqdot[38] = -(.5*((q[3]*uin[3])+((q[4]*uin[4])+(q[5]*uin[5]))));
 /*
- Used -0.00 seconds CPU time,
+ Used 0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain    9 adds/subtracts/negates
                      16 multiplies
@@ -14332,7 +14332,7 @@ Compute Vpk (partial velocities)
         vpkflg = 1;
     }
 /*
- Used 0.12 seconds CPU time,
+ Used 0.06 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 5976 adds/subtracts/negates
                    7671 multiplies
@@ -15201,7 +15201,7 @@ Compute Atk (inertial linear acceleration)
         inerflg = 1;
     }
 /*
- Used 0.02 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 1302 adds/subtracts/negates
                    1497 multiplies
@@ -16574,7 +16574,7 @@ Compute fs0 (RHS ignoring constraints)
         fs0flg = 1;
     }
 /*
- Used 0.05 seconds CPU time,
+ Used 0.03 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 2541 adds/subtracts/negates
                    2304 multiplies
@@ -25259,7 +25259,7 @@ Check for singular mass matrix
         }
     }
 /*
- Used 0.22 seconds CPU time,
+ Used 0.11 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 11686 adds/subtracts/negates
                    15072 multiplies
@@ -25502,7 +25502,7 @@ Calculate forces due to constraint multipliers.
         mtau[37] = 0.;
     }
 /*
- Used -0.00 seconds CPU time,
+ Used 0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain    0 adds/subtracts/negates
                       0 multiplies
@@ -26637,7 +26637,7 @@ Compute taus (RHS ignoring constraints and inertial forces)
 Op counts below do not include called subroutines
 */
 /*
- Used 0.05 seconds CPU time,
+ Used 0.03 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 2172 adds/subtracts/negates
                    2016 multiplies
@@ -26746,7 +26746,7 @@ Compute Fs (multiplier-generated forces only)
     fs[36] = mtau[36];
     fs[37] = mtau[37];
 /*
- Used 0.01 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain    0 adds/subtracts/negates
                       0 multiplies
@@ -28017,7 +28017,7 @@ Compute Fs (generic multiplier-generated forces)
       )+(mfk[38][1]*Vpk[37][37][1])))+((mtk[38][2]*pin[37][2])+((mtk[38][0]*
       pin[37][0])+(mtk[38][1]*pin[37][1])))));
 /*
- Used 0.07 seconds CPU time,
+ Used 0.05 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 2730 adds/subtracts/negates
                    2397 multiplies
@@ -28072,7 +28072,7 @@ Compute Fs (incl generic mult & other forces)
     fs[36] = (fs[36]+fs0[36]);
     fs[37] = (fs[37]+fs0[37]);
 /*
- Used 0.00 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain   38 adds/subtracts/negates
                       0 multiplies
@@ -30207,7 +30207,7 @@ Now calculate the torques
 Op counts below do not include called subroutines
 */
 /*
- Used 0.06 seconds CPU time,
+ Used 0.03 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 4090 adds/subtracts/negates
                    3975 multiplies
@@ -30255,7 +30255,7 @@ void sdfast_model_multtrq(double multin[38],
 void sdfast_model_rhs(void)
 {
 /*
-Generated 03-Feb-2017 09:20:12 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -32077,7 +32077,7 @@ Compute constraint acceleration errors
 */
     roustate = 3;
 /*
- Used 0.04 seconds CPU time,
+ Used 0.02 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 1727 adds/subtracts/negates
                    1593 multiplies
@@ -33080,10 +33080,12 @@ void sdfast_model_hinget(int joint,
         return;
     }
     if (mfrcflg != 0) {
-        mtau[sdfast_model_indx(joint,axis)] = mtau[sdfast_model_indx(joint,axis)]+torque;
+        mtau[sdfast_model_indx(joint,axis)] = mtau[sdfast_model_indx(joint,axis)
+          ]+torque;
     } else {
         fs0flg = 0;
-        utau[sdfast_model_indx(joint,axis)] = utau[sdfast_model_indx(joint,axis)]+torque;
+        utau[sdfast_model_indx(joint,axis)] = utau[sdfast_model_indx(joint,axis)
+          ]+torque;
     }
 }
 
@@ -35202,7 +35204,7 @@ Form QR decomposition of WW
         wwflg = 1;
     }
 /*
- Used 0.29 seconds CPU time,
+ Used 0.16 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 28158 adds/subtracts/negates
                    28158 multiplies
@@ -35229,7 +35231,7 @@ Solve equations ignoring constraints
         oudot0[i] = udot[i];
     }
 /*
- Used 0.00 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain    0 adds/subtracts/negates
                       0 multiplies
@@ -35282,7 +35284,7 @@ Compute udots due only to multipliers
         oudotm[i] = udot[i];
     }
 /*
- Used 0.00 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain    0 adds/subtracts/negates
                       0 multiplies
@@ -35362,8 +35364,8 @@ Compute and decompose constraint matrix WW
 /*
 Numerically solve for constraint multipliers
 */
-    sdfast_model_qrbslv(38,38,38,38,wmap,wmap,1e-13,workr,iwork,ww,qraux,jpvt,bb,mult,&
-      wrank);
+    sdfast_model_qrbslv(38,38,38,38,wmap,wmap,1e-13,workr,iwork,
+      ww,qraux,jpvt,bb,mult,&wrank);
     for (i = 0; i <= 37; i++) {
         multmap[i] = 0;
     }
@@ -35392,7 +35394,7 @@ Compute final udots
         oudot[i] = udot[i];
     }
 /*
- Used 0.00 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain  152 adds/subtracts/negates
                      76 multiplies
@@ -35441,7 +35443,7 @@ void sdfast_model_resid(double eqdot[39],
     }
     sdfast_model_rhs();
 /*
- Used 0.00 seconds CPU time,
+ Used -0.00 seconds CPU time,
  0 additional bytes of memory.
  Equations contain   77 adds/subtracts/negates
                      38 multiplies
@@ -35475,7 +35477,7 @@ void sdfast_model_reac(double force[39][3],
     double torque[39][3])
 {
 /*
-Generated 03-Feb-2017 09:20:13 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -37033,7 +37035,7 @@ Compute reaction forces for tree weld joints
       Cik[12][1][2]*force[8][2])+((Cik[12][1][0]*force[8][0])+(Cik[12][1][1]*
       force[8][1])))))))+temp[0]);
 /*
- Used 0.03 seconds CPU time,
+ Used 0.01 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 2238 adds/subtracts/negates
                    1902 multiplies
@@ -37049,7 +37051,7 @@ void sdfast_model_mom(double lm[3],
 /*
 Compute system linear and angular momentum, and kinetic energy.
 
-Generated 03-Feb-2017 09:20:13 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -37811,7 +37813,7 @@ FAR Supplement.  Symbolic Dynamics, Inc., Mountain View, CA 94041
       wk[37][1])))+((lk[38][2]*vnk[37][2])+((lk[38][0]*vnk[37][0])+(lk[38][1]*
       vnk[37][1]))))+temp[18]));
 /*
- Used 0.03 seconds CPU time,
+ Used 0.02 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 1169 adds/subtracts/negates
                    1294 multiplies
@@ -37828,7 +37830,7 @@ void sdfast_model_sys(double *mtoto,
 Compute system total mass, and instantaneous center of mass and
 inertia matrix.
 
-Generated 03-Feb-2017 09:20:13 by SD/FAST, Kane's formulation
+Generated 14-Feb-2017 19:08:47 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 Copyright (c) 1990-1997 Symbolic Dynamics, Inc.
 Copyright (c) 1990-1997 Parametric Technology Corp.
@@ -38929,7 +38931,7 @@ FAR Supplement.  Symbolic Dynamics, Inc., Mountain View, CA 94041
       cnk[37][2][1]*ikcnkt[37][1][2]))))+temp[15])-(mtot*((com[0]*com[0])+(
       com[1]*com[1]))));
 /*
- Used 0.10 seconds CPU time,
+ Used 0.05 seconds CPU time,
  0 additional bytes of memory.
  Equations contain 1488 adds/subtracts/negates
                    1995 multiplies
@@ -39645,10 +39647,10 @@ void sdfast_model_cons(int consno,
 void sdfast_model_gentime(int *gentm)
 {
 
-    *gentm = 92012;
+    *gentm = 190837;
 }
 /*
-Done. CPU seconds used: 1.28  Memory used: 1687552 bytes.
+Done. CPU seconds used: 10.61  Memory used: 1687552 bytes.
 Equation complexity:
   sdstate:  4274 adds  5728 multiplies     4 divides  3241 assignments
   sdderiv: 152136 adds 159609 multiplies  1631 divides 158800 assignments
