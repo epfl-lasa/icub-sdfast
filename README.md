@@ -15,16 +15,16 @@ navigate to icub-sdfast folder, then:
 	./test
 
 # Code Implementation
-In icub-sdfast/codes/src/Model.cpp, "get_massmat" and "get_frcmat" return the mass matrix and gravitational, corriolis and ... forces respectively.
+In `icub-sdfast/sdfast/src/Model.cpp`, "get_massmat" and "get_frcmat" return the mass matrix and gravitational, corriolis and ... forces respectively.
 The Model class(model.cpp and model.hpp) interfaces with the SDFAST library to use its functions.
 
 Before using this interface, following steps should be done:
 
-1 - The number of states (AIR_N_Q) and number of state derivatives (AIR_N_U), also the number of bodies and joints should be defined in icub-sdfast/sdfast/include/Description.hpp
+1. The number of states (AIR_N_Q) and number of state derivatives (AIR_N_U), also the number of bodies and joints should be defined in icub-sdfast/sdfast/include/Description.hpp
 
-2-  Description of state vector and its derivative, as well as body and joint indices can be defined in Description.hpp. This step is optional.
+2.  Description of state vector and its derivative, as well as body and joint indices can be defined in [Description.hpp](https://github.com/epfl-lasa/icub-sdfast/blob/master/sdfast/include/Description.hpp). This step is optional.
 
-3-  Minimum and maximum feasible joint angles should be specified in Model.cpp (Model::init).
+3.  Minimum and maximum feasible joint angles should be specified in [Model.cpp](https://github.com/epfl-lasa/icub-sdfast/blob/master/codes/src/Model.cpp) (`Model::init`).
 
 
 
