@@ -1,7 +1,9 @@
 # Description 
-The model of icub as a floating base robot (sdfast_model.sd) should be run seperately in sdfast. Then, the output files of sdfast including c codes should be provided in icub-sdfast/src.
 
-Here, an interface is provided to extract required information (like mass matrix) from the SDFAST output codes.
+This package provides an interface to extract required information for general equations of motion of the whole robot (like mass matrix) from the SDFAST output codes.
+
+# Prerequisite
+The model of icub as a floating base robot should be run seperately in SD/FAST. Then, the output files of sdfast including c codes should be provided in `icub-sdfast/sdfast/src/`.
 
 Note:
 sdfast_model.sd is the description file which is used as the input for SDFAST to generate the symbolic dynamic.
