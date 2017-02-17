@@ -16,7 +16,7 @@ navigate to icub-sdfast folder, then:
 
 # Code Implementation
 In `icub-sdfast/sdfast/src/Model.cpp`, `get_massmat` and `get_frcmat` return the mass matrix and gravitational, corriolis and ... forces respectively.
-The Model class(model.cpp and model.hpp) interfaces with the SDFAST library to use its functions.
+The Model class ([model.cpp](https://github.com/epfl-lasa/icub-sdfast/blob/master/codes/src/Model.cpp) and [model.hpp](https://github.com/epfl-lasa/icub-sdfast/blob/master/codes/include/Model.hpp)) interfaces with the SDFAST library to use its functions.
 
 Before using this interface, following steps should be done:
 
