@@ -76,33 +76,33 @@ void Model::init()
 
 	qmax << inf, inf, inf, inf, inf, inf,
 
-			1.46608, 0.680678, 1.02974,                    // torso pitch, roll, yaw
-			0.0872665, 2.80649, 1.74533,					// left shoulder pitch ,roll, yaw
-			1.85005, 							//left elbow
-			0.872665, 0.174533, 0.436332 ,             		//left wrist prosup, pitch, yaw
-			2.30383, 2.07694, 1.37881, 					//left hip pitch, roll, yaw
-			0.401426, 0.366519,	0.418879,						//left knee, ankle pitch, ankle roll
-			0.0872665, 2.80649, 1.74533,					// right shoulder pitch ,roll, yaw
-			1.85005, 							//right elbow
-			0.872665, 0.174533, 0.436332,						//right wrist prosup, pitch, yaw
-			2.30383, 2.07694, 1.37881, 					//right hip pitch, roll, yaw
-			0.401426, 0.366519, 0.418879,						//right knee, ankle pitch, ankle roll
-			0.383972, 0.349066, 0.767945;						//neck pitch, roll, yaw
+			1.46608, 0.680678, 1.02974,                     // torso pitch, roll, yaw
+			0.0872665, 2.80649, 1.74533,		        // left shoulder pitch ,roll, yaw
+			1.85005, 				        //left elbow
+			0.872665, 0.174533, 0.436332 ,                  //left wrist prosup, pitch, yaw
+			2.30383, 2.07694, 1.37881, 		        //left hip pitch, roll, yaw
+			0.401426, 0.366519,	0.418879,		//left knee, ankle pitch, ankle roll
+			0.0872665, 2.80649, 1.74533,			// right shoulder pitch ,roll, yaw
+			1.85005, 					//right elbow
+			0.872665, 0.174533, 0.436332,			//right wrist prosup, pitch, yaw
+			2.30383, 2.07694, 1.37881, 			//right hip pitch, roll, yaw
+			0.401426, 0.366519, 0.418879,			//right knee, ankle pitch, ankle roll
+			0.383972, 0.349066, 0.767945;			//neck pitch, roll, yaw
 
 
 	qmin << -inf, -inf, -inf, -inf, -inf, -inf,
-			-0.383972, -0.680678, -1.02974,                  // torso pitch, roll, yaw
-			-1.65806,  0.00000, -0.645772, 		     		//left shoulder pitch ,roll, yaw
-			0.0959931, 							//left elbow
-			-0.872665, -1.13446, -0.436332, 					//left wrist prosup, pitch, yaw
-			-0.767945, -0.296706, -1.37881,					//left hip pitch, roll, yaw
-			-2.18166, -0.733038, -0.418879 ,				//left knee, ankle pitch, ankle roll
-			-1.65806,  0.00000, -0.645772, 		     		//right shoulder pitch ,roll, yaw
-			0.0959931, 							//right elbow
-			-0.872665, -1.13446, -0.436332, 					//right wrist prosup, pitch, yaw
-			-0.767945, -0.296706, -1.37881,					//right hip pitch, roll, yaw
-			-2.18166, -0.733038, -0.418879,				//right knee, ankle pitch, ankle roll
-			-0.523599, -0.349066, -0.767945;						//neck pitch, roll, yaw
+			-0.383972, -0.680678, -1.02974,                 // torso pitch, roll, yaw
+			-1.65806,  0.00000, -0.645772, 		     	//left shoulder pitch ,roll, yaw
+			0.0959931, 					//left elbow
+			-0.872665, -1.13446, -0.436332, 		//left wrist prosup, pitch, yaw
+			-0.767945, -0.296706, -1.37881,			//left hip pitch, roll, yaw
+			-2.18166, -0.733038, -0.418879 ,		//left knee, ankle pitch, ankle roll
+			-1.65806,  0.00000, -0.645772, 		     	//right shoulder pitch ,roll, yaw
+			0.0959931, 					//right elbow
+			-0.872665, -1.13446, -0.436332, 		//right wrist prosup, pitch, yaw
+			-0.767945, -0.296706, -1.37881,			//right hip pitch, roll, yaw
+			-2.18166, -0.733038, -0.418879,			//right knee, ankle pitch, ankle roll
+			-0.523599, -0.349066, -0.767945;		//neck pitch, roll, yaw
 
 
 }
