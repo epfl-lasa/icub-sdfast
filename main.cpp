@@ -40,6 +40,7 @@ int main()
              model.set_state(0, ref_pos, ref_vel);
          //  model.check_consistency(Cvector::Random(AIR_N_Q),Cvector::Random(AIR_N_U),Cvector::Random(AIR_N_U));
 
+
    Cmatrix jac_tr = model.get_jacob(11, Cvector3(0,0,0), CT_TRANSLATION);
    Cmatrix jac_rot = model.get_jacob(11, Cvector3(0,0,0), CT_ROTATION);
 /*
