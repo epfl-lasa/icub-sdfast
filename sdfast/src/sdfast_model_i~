@@ -1,5 +1,5 @@
 SD/FAST Information File: sdfast_model.sd
-Generated 03-Feb-2017 09:20:12 by SD/FAST, Kane's formulation
+Generated 09-Feb-2017 11:09:15 by SD/FAST, Kane's formulation
 (sdfast B.2.8 #30123) on machine ID unknown
 
 ROADMAP (sdfast_model.sd)
@@ -101,7 +101,7 @@ STATE INDEX TO JOINT/AXIS MAP (sdfast_model.sd)
  38|        0     6   Sixdof        4th quat  
    
 
-SYSTEM PARAMETERS (sdfast_icub_new.sd)
+SYSTEM PARAMETERS (sdfast_model.sd)
 
 Parameter  Value  Description
 
