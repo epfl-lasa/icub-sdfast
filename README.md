@@ -13,6 +13,11 @@ navigate to icub-sdfast folder, then:
 	cmake ..
 	make 
 	./test
+	
+Before using any SD/FAST functtions, initial states of the system including initial position and velocity should be defined using the following command:
+
+	iCubModel.set_state(0, ref_pos, ref_vel)
+	
 
 # Code Implementation
 In `icub-sdfast/sdfast/src/Model.cpp`, `get_massmat` and `get_frcmat` return the mass matrix and gravitational, Coriolis and ... forces respectively.
